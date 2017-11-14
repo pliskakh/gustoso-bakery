@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css?family=Alegreya:400,700');
+
+@font-face {
+  font-family: "Playfair Display";
+  src: local("Playfair Display"), url("../fonts/PlayfairDisplayBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal; 
+ }
+
+@font-face {
+  font-family: "Scriptina";
+  src: local("Scriptina"), url("../fonts/scriptin-webfont.woff") format("woff"), url("../fonts/scriptin-webfont.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal; 
+ }
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: local("Proxima Nova"), url("../fonts/ProximaNova-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; 
+ }
+
+body{
+	font: 400 14px/1.7 'Proxima Nova', sans-serif;
+	color: #56534c;
+}
+
+/* Layout */
+.ba-container{
+	padding-left: 20px;
+	padding-right: 20px;
+	max-width: 1300px;
+}
+
+/* Typography */
+
+h1 {
+	margin: 0;
+}
+
+
+a,
+input[type="submit"],
+input[type="button"],
+button{
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+input[type="submit"],
+input[type="button"],
+button,
+.ba-button{
+	display: inline-block;
+	height: 48px;
+	line-height: 48px;
+	padding: 0 50px;
+	font-family: 'Alegreya', serif;
+	font-size: 18px;
+	letter-spacing: 0.5em;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover,
+.ba-button:hover{
+	background: #ccc;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+
+}
+textarea {
+
+}
+
+.ba-intro {
+	background: #FFF url('../img/bg.jpg') center center no-repeat;
+	background-size: cover;
+}
+
+.ba-logo img,
+.ba-social img {
+	display: block;
+}
+
+.ba-header-wrapper {
+	background: rgba(86,83,76,.53);
+}
+
+.ba-header {
+/*	display: flex;
+	justify-content: space-between;
+	align-items: center;*/
+	padding: 18px 0 10px;
+	
+	min-height: 70px;
+}
+
+.ba-nav{
+	display: inline-block;
+	padding: 0 0 0 105px;
+}
+
+.ba-links {
+	display: inline-block;
+} 
+
+.ba-menu,
+.ba-social {
+	display: inline-block;
+	font-size: 0;
+	margin: 0;
+	padding: 0;
+	padding-top: 5px;
+}
+
+.ba-menu li,
+.ba-social li {
+	font-size: 14px;
+	list-style: none;
+	display: inline-block;
+	vertical-align: middle;
+	letter-spacing: .3em;
+}
+
+.ba-menu li:not(:first-child)::before {
+	content: "~";
+	margin: 0 35px;
+	display: inline-block;
+	vertical-align: middle;
+	color: #FFF;
+	
+}
+
+.ba-menu a {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #FFF;
+	font-family: 'Alegreya', serif;
+}
+
+.ba-menu a:hover {
+	/*background: #ccc;*/
+	color: #000;
+}
+
+.ba-social li:not(:first-child) {
+	margin-left: 29px;
+}
+
+.ba-intro__content {
+	padding: 198px 0 215px;
+	background: url(../img/bg_shadow.png) center no-repeat;
+}
+
+.ba-title {
+	font-family: 'Playfair Display';
+	color: #ffffff;
+	font-size: 92px;
+	font-weight: 700;
+	line-height: 1.2;
+	text-shadow: 0px 1px 0px #3d3029;
+	letter-spacing: 0.075em;
+	padding-bottom: 65px;
+	
+	background: url(../img/dashed-line.png) center 100% no-repeat;
+}
+
+.ba-subtitle {
+
+	font: 400 24px/1.5 'Proxima Nova', sans-serif; 
+	color: #ffffff;
+	text-shadow: 0px 1px 0px #3d3029;
+	letter-spacing: .1em;
+	
+	padding-top: 60px;
+	padding-bottom: 62px;
+	
+	max-width: 550px;
+	margin: 0 auto;
+}
+
+.ba-intro__button {
+	border: 1px dashed #9e9c93;
+	background-color: rgba(86, 83, 76, 0.53);
+	color: #ffffff;
+	font-size: 14px;
+	letter-spacing: .3em;
+}
+
+
+
+
